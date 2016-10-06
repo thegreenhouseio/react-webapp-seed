@@ -1,0 +1,25 @@
+{
+  "name": "seed-webapp",
+  "version": "0.1.0",
+  "description": "This is the seed repo for FrontEnd projects in The Greenhouse, based on React and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegreenhouseio/react-typescript-seed.git"
+  },
+  "keywords": [
+    "React",
+    "Webpack",
+    "The",
+    "Greenhouse"
+  ],
+  "author": "Owen Buckley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegreenhouseio/react-typescript-seed/issues"
+  },
+  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme"
+}
