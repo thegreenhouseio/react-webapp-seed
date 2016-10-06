@@ -19,3 +19,16 @@ npm cache clean
 echo "installing project dependencie"
 echo "installing NPM packages"
 npm install
+
+
+echo "install typings"
+./node_modules/.bin/typings install
+
+echo "typescript version"
+./node_modules/.bin/tsc --version
+
+echo "typings version"
+./node_modules/.bin/typings --version
+
+echo "running the build..."
+npm run ci

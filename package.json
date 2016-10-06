@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "This is the seed repo for FrontEnd projects in The Greenhouse, based on React and Webpack.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ./build && webpack --config ./webpack.config.prod.js -p --progress --profile --bail",
+    "ci": "export NODE_ENV=production && npm run build",
+    "develop": "export NODE_ENV=development && rimraf ./build && webpack-dev-server --config ./webpack.config.dev.js --inline --progress --port 4567",
+    "demo": "npm run build && cd ./build/ && ../node_modules/.bin/lite-server"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,23 @@
   "bugs": {
     "url": "https://github.com/thegreenhouseio/react-typescript-seed/issues"
   },
-  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme"
+  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme",
+  "dependencies": {
+    "react": "15.3.2",
+    "react-dom": "15.3.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "2.2.4",
+    "html-loader": "0.4.4",
+    "html-webpack-plugin": "2.22.0",
+    "rimraf": "2.5.4",
+    "source-map-loader": "0.1.5",
+    "ts-loader": "0.8.2",
+    "typescript": "2.0.3",
+    "typings": "1.4.0",
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.16.1",
+    "webpack-md5-hash": "0.0.5",
+    "webpack-merge": "0.14.1"
+  }
 }
