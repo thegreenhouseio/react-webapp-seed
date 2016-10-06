@@ -1,5 +1,5 @@
-# typescript-webpack-seed
-TypeScript and Webpack Seed Project for The Greenhouse, as a template / starter project for frontend web applications.
+# react-webpack-seed
+React and Webpack Seed Project for The Greenhouse, as a template / starter project for frontend web applications.
 This is a simple starter project meant to get you up and running as fast as possible with a full local and production 
 build with all the tools working together and as minimal friction and configuration as possible.  Simply clone the 
 repo and edit the files as needed to match your project.
