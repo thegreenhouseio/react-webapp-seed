@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "This is the seed repo for FrontEnd projects in The Greenhouse, based on React and Webpack.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ci": "npm run build",
+    "build": "webpack --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/thegreenhouseio/react-typescript-seed/issues"
   },
-  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme"
+  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme",
+  "dependencies": {
+    "react": "15.3.2",
+    "react-dom": "15.3.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "2.22.0",
+    "source-map-loader": "0.1.5",
+    "ts-loader": "0.8.2",
+    "typescript": "2.0.3",
+    "typings": "1.4.0",
+    "webpack": "1.13.2"
+  }
 }

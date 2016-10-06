@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./src/components/hello-world/hello-world.tsx",
+    "./src/index.tsx"
+  ]
+}
