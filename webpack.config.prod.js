@@ -66,19 +66,6 @@ module.exports = webpackMerge(commonConfig, {
     resourcePath: 'src'
   },
 
-  // TODO: Need to workaround Angular 2's html syntax => #id [bind] (event) *ngFor
-  htmlLoader: {
-    minimize: true,
-    removeAttributeQuotes: false,
-    caseSensitive: true,
-    customAttrSurround: [
-      [/#/, /(?:)/],
-      [/\*/, /(?:)/],
-      [/\[?\(?/, /(?:)/]
-    ],
-    customAttrAssign: [/\)?\]?=/]
-  },
-
   //TODO is this needed?
   node: {
     global: 'window',
