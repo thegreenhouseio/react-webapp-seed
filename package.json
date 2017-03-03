@@ -17,7 +17,10 @@
     "Webpack",
     "The Greenhouse"
   ],
-  "author": "Owen Buckley",
+  "author": {
+    "name": "Owen Buckley",
+    "email": "owen.buckley@analogstudios.net"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thegreenhouseio/react-typescript-seed/issues"
