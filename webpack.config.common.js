@@ -4,8 +4,7 @@ const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin
 
 module.exports = {
   entry: {
-    'vendor':    './src/vendor.ts',
-    'main':      './src/index.tsx'
+    index: './src/index.tsx'
   },
   output: {
     filename: "./build/bundle.js",
@@ -16,7 +15,7 @@ module.exports = {
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+    extensions: ["", ".ts", ".tsx", ".js"]
   },
 
   module: {
@@ -28,6 +27,18 @@ module.exports = {
       test: /\.html$/,
       loader: 'html-loader',
       exclude: [__dirname + './src/index.html']
+    }, {
+      test: /\.css$/,
+      loader: "style-loader!css-loader"
+    }, {
+      test: /\.(jpg|png|gif)$/,
+      loader: 'file'
+    }, {
+      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: "url-loader?limit=10000&mimetype=application/font-woff"
+    }, {
+      test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: "file-loader"
     }],
 
     preLoaders: [{
