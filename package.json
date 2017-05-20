@@ -4,7 +4,7 @@
   "description": "This is the seed repo for FrontEnd projects in The Greenhouse, based on React and Webpack.",
   "scripts": {
     "clean": "rimraf ./build && rimraf ./reports && mkdir ./reports && mkdir ./reports/test-results",
-    "build": "eslint *.js && webpack --config ./webpack.config.prod.js -p --progress --profile --bail",
+    "build": "eslint *.js **/**/*.spec.jsx && webpack --config ./webpack.config.prod.js -p --progress --profile --bail",
     "develop": "webpack-dev-server --open --config ./webpack.config.develop.js --inline --progress",
     "serve": "webpack --config ./webpack.config.prod.js -p --progress --profile --bail && http-server ./build -o",
     "setup": "rimraf ./src/services/credentials.ts && cp ./src/services/credentials.ts.tmpl ./src/services/credentials.ts",
