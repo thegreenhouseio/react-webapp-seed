@@ -2,14 +2,14 @@ const commonConfig = require('./webpack.config.common.js');
 const webpackMerge = require('webpack-merge');
 
 module.exports = webpackMerge(commonConfig, {
-  debug: true,
-  devtool: 'cheap-module-source-map',
+  // debug: true,
+  // devtool: 'cheap-module-source-map',
 
-  tslint: {
-    emitErrors: false,
-    failOnHint: false,
-    resourcePath: 'src'
-  },
+  // tslint: {
+  //   emitErrors: false,
+  //   failOnHint: false,
+  //   resourcePath: 'src'
+  // },
 
   devServer: {
     port: 4567,

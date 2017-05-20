@@ -11,6 +11,12 @@ adopt Webpack now was done with the understanding that ES6 `imports` would be su
 will always strive to work as close to the spec as possible to ensure the least amount of tools get in the way between 
 your user's browser and the source code written.
 
+**Redux**
+Redux dependencies are installed but not used in the seed for a reason.  Redux is something you should need, not sure
+by default.  For an example of a project used redux with this stack, checkout [github-dashboard][]
+
+[github-dashboard]: https://github.com/thescientist13/github-dashboard
+
 ## Setup Steps
 - _README.md_ - project name, Links, sections on release procedure, CI, AWS info
 - _webpack.config.develop.js_ - API proxy
@@ -178,6 +184,10 @@ $ yarn add <package-name> [--dev]
 $ yarn remove <package-name>
 ```
 
+### Upgrade
+```
+$ yarn upgrade <package-name>
+```
 
 ## Continuous Integration
 **TODO Document Your Continuous Integration Environment Here**
