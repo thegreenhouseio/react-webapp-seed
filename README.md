@@ -28,17 +28,17 @@ by default.  For an example of a project used redux with this stack, checkout [g
 The following tools are used in the application
 
 - [React][] - as the Front-End library
-- [Webpack 1.13][] - Module loader / bundler, primary build tool
-- [Node 6][]  - local development and build time JavaScript runtime
-- [NPM 3][]  - package manager for build and application dependencies
-- [TypeScript 2.0][] - superset of JavaScript for writing application code
+- [Webpack][] - Module loader / bundler, primary build tool
+- [Node][]  - local development and build time JavaScript runtime
+- [Yarn][]  - package manager for build and application dependencies
+- [TypeScript][] - superset of JavaScript for writing application code
 - [Jest][] - unit testing library / runner, with [Enyzme][]
 
-[Node 6]: https://nodejs.org/
-[NPM 3]: https://www.npmjs.com/
+[Node]: https://nodejs.org/
+[Yarn]: https://www.yarnpkg.com/
 [React]: https://facebook.github.io/react/
-[TypeScript 2.0]: https://www.typescriptlang.org/
-[Webpack 1.13]: https://webpack.github.io/
+[TypeScript]: https://www.typescriptlang.org/
+[Webpack]: https://webpack.github.io/
 [Jest]: https://facebook.github.io/jest/
 [Enzyme]: https://github.com/airbnb/enzyme
 
