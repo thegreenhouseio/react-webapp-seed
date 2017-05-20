@@ -1,0 +1,21 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+//variables
+$white: #efefef;
+$black: #020202;
+
+$primary: #6d0202;
+$bg-primary: #c2b08b;
+$bg-secondary: #ae996b;
+$bg-tertiary: #d3c6ae;
+
+$font-family-primary: 'Baloo Bhaina', cursive;
+$font-color-primary: $white;
+$font-color-secondary: #316291;
+
+body {
+
+  font-family: $font-family-primary;
+
+}

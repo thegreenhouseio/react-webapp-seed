@@ -1,34 +1,17 @@
-#!/bin/sh
-
-echo "executing build.sh..."
-
-echo "show environment..."
+#!/usr/bin/env bash
 
 echo "node version"
-node --version
-
+node -v
 echo "npm version"
-npm --version
+npm -v
+echo "yarn version"
+yarn --version
 
-echo "clear existing dependencies..."
+echo "install dependencies..."
 rm -rf node_modules/ > /dev/null 2>&1
+yarn install
 
-echo "clearing NPM caches..."
-npm cache clean
-
-echo "installing project dependencie"
-echo "installing NPM packages"
-npm install
-
-
-echo "install typings"
-./node_modules/.bin/typings install
-
-echo "typescript version"
-./node_modules/.bin/tsc --version
-
-echo "typings version"
-./node_modules/.bin/typings --version
-
-echo "running the build..."
-npm run ci
+# build
+yarn run clean
+yarn run test -- --coverage
+yarn run build

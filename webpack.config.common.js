@@ -1,6 +1,7 @@
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -28,8 +29,8 @@ module.exports = {
       loader: 'html-loader',
       exclude: [__dirname + './src/index.html']
     }, {
-      test: /\.css$/,
-      loader: "style-loader!css-loader"
+      test: /\.scss/,
+      loader: "style-loader!css!sass"
     }, {
       test: /\.(jpg|png|gif)$/,
       loader: 'file'
@@ -50,6 +51,8 @@ module.exports = {
 
   plugins: [
     new ForkCheckerPlugin(),
+
+    // new ExtractTextPlugin("styles.css"),
 
     new HtmlWebpackPlugin({
       template: 'src/index.html',

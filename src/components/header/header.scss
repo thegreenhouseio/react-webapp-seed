@@ -1,0 +1,23 @@
+@import "../../components/bootstrap/bootstrap";
+
+header {
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+
+  .header-text {
+    margin: 0 auto;
+  }
+
+  .header-banner {
+    background: url("./images/banner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+  }
+
+  .io-text {
+    width: 50px;
+    margin: 0 auto;
+  }
+}
