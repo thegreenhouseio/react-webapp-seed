@@ -6,7 +6,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    index: './src/index.tsx'
+    index: './src/index.tsx',
+    vendor: './src/vendor.ts'
   },
 
   output: {

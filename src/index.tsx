@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { IndexRoute, Router, Route, browserHistory } from 'react-router';
+import About from './views/about/about';
 import Bootstrap from './components/bootstrap/bootstrap';
 import Home from './views/home/home';
 
@@ -9,6 +10,7 @@ render(
     <Route path='/' component={Bootstrap}>
       <IndexRoute component={Home} />
       <Route path='home' component={Home} />
+      <Route path='about' component={About} />
     </Route>
   </Router>,
   document.getElementById('bootstrap'));

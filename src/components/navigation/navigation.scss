@@ -1,0 +1,17 @@
+nav.navigation {
+  width: 200px;
+  margin: 0 auto;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+}
