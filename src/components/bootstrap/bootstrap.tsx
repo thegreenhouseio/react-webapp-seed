@@ -6,7 +6,7 @@ export default class Bootstrap extends React.Component<{}, {}> {
 
   render() {
     return (
-      <div className="container">
+      <div className='container'>
 
         <section className='row'>
           <Header/>

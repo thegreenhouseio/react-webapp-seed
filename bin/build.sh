@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-echo "node version"
+echo 'node version'
 node -v
-echo "npm version"
+echo 'npm version'
 npm -v
-echo "yarn version"
+echo 'yarn version'
 yarn --version
 
-echo "install dependencies..."
+echo 'install dependencies...'
 rm -rf node_modules/ > /dev/null 2>&1
 yarn install
 

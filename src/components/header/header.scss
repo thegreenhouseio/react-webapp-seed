@@ -1,4 +1,4 @@
-@import "../../components/bootstrap/bootstrap";
+@import '../../components/bootstrap/bootstrap';
 
 header {
   margin-bottom: 20px;
@@ -10,7 +10,7 @@ header {
   }
 
   .header-banner {
-    background: url("./images/banner.gif");
+    background: url('./images/banner.gif');
     background-repeat: no-repeat;
     background-position: center;
     height: 250px;

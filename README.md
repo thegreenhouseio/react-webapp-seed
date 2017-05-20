@@ -104,8 +104,8 @@ $ npm run install:typings
 ## Project Layout
 An overview of important files and configurations for the applications
 
-### Root Files ("dot" files)
-Also know as "dot" files, these are the build and build configuration files for the application
+### Root Files ('dot' files)
+Also know as 'dot' files, these are the build and build configuration files for the application
 * _bin/_ - shell scripts for continuous integration and build environments
 * _.babelrc_ - configuration file Babel Gulpfile
 * _editorconfig_ - configuration file for EditorConfig IDE plugin
@@ -123,10 +123,10 @@ Application code, including unit tests.  Directories are intended to be kept as 
 a feather) organization.  
 * _src_ - application code
 * _src/components/_ - resusable UI features
-* _src/services/_ -  APIs for handling  backend REST APIs or browser APIs, non UI related "helpers"
-* _src/views/_ -  routable states ("pages")
+* _src/services/_ -  APIs for handling  backend REST APIs or browser APIs, non UI related 'helpers'
+* _src/views/_ -  routable states ('pages')
 * _src/index.html_ - main layout of the application
-* _src/main.ts_ - main entry way into the application and "bootstrapper"
+* _src/main.ts_ - main entry way into the application and 'bootstrapper'
 * _src/polyfills.ts_ - collection of polyfills needed by the application
 * _src/routes.ts_ - routes for the application, maps to different views
 * _src/vendor.ts_ - vendor files from _node_modules_
@@ -138,7 +138,7 @@ This project uses Webpack as the build tool, exectuted via NPM scripts.  All ava
 section of _package.json_
 
 ### Development
-This will start up a Node (Express) server which watches for changes and "redeploys" as needed.
+This will start up a Node (Express) server which watches for changes and 'redeploys' as needed.
 
 **Note: This task exports** `NODE_ENV=development`
 
