@@ -20,10 +20,12 @@ export default class Footer extends React.Component<{}, BootstrapStateInterface>
 
   render() {
     return (
-      <p className='copyright-text'> {this.state.copyright}
-        <br/>
-        <a href='http://www.thegreenhouseio.blog'>The Greenhouse</a>
-      </p>
+      <footer>
+        <p className='copyright-text'> {this.state.copyright}
+          <br/>
+          <a href='http://www.thegreenhouseio.blog'>The Greenhouse</a>
+        </p>
+      </footer>
     );
   }
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Footer from '../foooter/footer';
+import Footer from '../footer/footer';
 import Header from '../header/header';
 
 export default class Bootstrap extends React.Component<{}, {}> {
