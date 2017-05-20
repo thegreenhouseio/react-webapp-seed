@@ -1,6 +1,8 @@
+@import '../../components/bootstrap/bootstrap';
+
 nav.navigation {
+  margin: $center-margin;
   width: 200px;
-  margin: 0 auto;
 }
 
 ul {

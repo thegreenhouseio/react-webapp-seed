@@ -1,12 +1,14 @@
 @import '../../components/bootstrap/bootstrap';
 
+$center-margin: 0 auto;
+
 header {
   margin-bottom: 20px;
   text-align: center;
   cursor: pointer;
 
   .header-text {
-    margin: 0 auto;
+    margin: $center-margin;
   }
 
   .header-banner {
@@ -17,7 +19,7 @@ header {
   }
 
   .io-text {
+    margin: $center-margin;
     width: 50px;
-    margin: 0 auto;
   }
 }

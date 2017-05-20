@@ -1,6 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const SassLintPlugin = require('sasslint-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -41,8 +42,8 @@ module.exports = {
     }, {
       test: /\.scss/,
       use: ExtractTextPlugin.extract({
-        fallback: "style-loader",
-        use: "css-loader!sass-loader"
+        fallback: 'style-loader',
+        use: 'css-loader!sass-loader'
       })
     }, {
       test: /\.(jpg|png|gif)$/,
@@ -57,6 +58,12 @@ module.exports = {
   },
 
   plugins: [
+    new SassLintPlugin({
+      configFile: '.sass-lint.yml',
+      ignoreFiles: ['/node_modules/bootstrap/scss/**/**'],
+      glob: 'src/**/*.scss'
+    }),
+
     new ExtractTextPlugin({
       filename: 'styles.css',
       allChunks: true

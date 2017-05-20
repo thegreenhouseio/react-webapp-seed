@@ -2,7 +2,6 @@ const commonConfig = require('./webpack.config.common.js');
 const webpackMerge = require('webpack-merge');
 
 module.exports = webpackMerge(commonConfig, {
-  // devtool: 'cheap-module-source-map',
 
   devServer: {
     port: 4567,
