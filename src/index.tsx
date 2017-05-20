@@ -1,9 +1,16 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react';
+import { render } from 'react-dom';
+import { IndexRoute, Router, Route, browserHistory } from 'react-router';
+import About from './views/about/about';
+import Bootstrap from './components/bootstrap/bootstrap';
+import Home from './views/home/home';
 
-import { HelloWorldComponent } from "./components/hello-world/hello-world";
-
-ReactDOM.render(
-  <HelloWorldComponent compiler="TypeScript" framework="React" />,
-  document.getElementById("seed-webapp")
-);
+render(
+  <Router history={browserHistory}>
+    <Route path='/' component={Bootstrap}>
+      <IndexRoute component={Home} />
+      <Route path='home' component={Home} />
+      <Route path='about' component={About} />
+    </Route>
+  </Router>,
+  document.getElementById('bootstrap'));

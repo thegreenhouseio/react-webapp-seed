@@ -1,0 +1,19 @@
+@import '../../components/bootstrap/bootstrap';
+
+nav.navigation {
+  margin: $center-margin;
+  width: 200px;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+}
