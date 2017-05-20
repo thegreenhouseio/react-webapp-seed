@@ -1,5 +1,4 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
@@ -18,7 +17,7 @@ module.exports = {
   },
 
   // Enable sourcemaps for debugging webpack's output.
-  // devtool: 'source-map',
+  devtool: 'source-map',
 
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -34,7 +33,7 @@ module.exports = {
     }, {
       test: /\.tsx$/,
       enforce: 'pre',
-      loader: 'tslint-loader'  // source-map-loader
+      loader: 'tslint-loader'
     }, {
       test: /\.html$/,
       loader: 'html-loader',
@@ -58,8 +57,6 @@ module.exports = {
   },
 
   plugins: [
-    // new ForkCheckerPlugin(),
-
     new ExtractTextPlugin({
       filename: 'styles.css',
       allChunks: true
@@ -71,7 +68,7 @@ module.exports = {
     }),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['vendor'].reverse()
+      name: ['index', 'vendor']
     })
 
   ]

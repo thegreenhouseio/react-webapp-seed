@@ -15,7 +15,8 @@ module.exports = webpackMerge(commonConfig, {
       beautify: false,
       mangle: { screw_ie8: true, keep_fnames: true }, // eslint-disable-line camelcase
       compress: { screw_ie8: true }, // eslint-disable-line camelcase
-      comments: false
+      comments: false,
+      sourceMap: true
     })
   ]
 
