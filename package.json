@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thegreenhouseio/react-typescript-seed.git"
+    "url": "git+https://github.com/thegreenhouseio/react-webapp-seed.git"
   },
   "keywords": [
     "React",
@@ -25,9 +25,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thegreenhouseio/react-typescript-seed/issues"
+    "url": "https://github.com/thegreenhouseio/react-webapp-seed/issues"
   },
-  "homepage": "https://github.com/thegreenhouseio/react-typescript-seed#readme",
+  "homepage": "https://github.com/thegreenhouseio/react-webapp-seed#readme",
   "dependencies": {
     "@types/react-addons-test-utils": "^0.14.18",
     "axios": "0.15.2",
