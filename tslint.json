@@ -70,7 +70,7 @@
       "check-module"
     ],
 
-    "eofline": true,
+    "eofline": false,
     "indent": [
       true,
       "spaces"

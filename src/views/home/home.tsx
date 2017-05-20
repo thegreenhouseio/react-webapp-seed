@@ -5,7 +5,7 @@ export interface HelloProps {
   framework: string;
 }
 
-export class HomeViewComponent extends React.Component<{}, {}> {
+export default class Home extends React.Component<{}, {}> {
 
   render() {
     return <h1>It Works!</h1>;
