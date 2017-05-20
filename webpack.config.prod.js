@@ -5,14 +5,7 @@ const webpackMerge = require('webpack-merge');
 
 module.exports = webpackMerge(commonConfig, {
 
-  // debug: false,
   // devtool: 'source-map',
-  //
-  // tslint: {
-  //   emitErrors: true,
-  //   failOnHint: true,
-  //   resourcePath: 'src'
-  // },
 
   plugins: [
 

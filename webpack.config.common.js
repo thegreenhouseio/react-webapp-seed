@@ -1,4 +1,4 @@
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -41,7 +41,10 @@ module.exports = {
       exclude: path.join(__dirname, './src/index.html')
     }, {
       test: /\.scss/,
-      loader: 'style-loader!css-loader!sass-loader'
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: "css-loader!sass-loader"
+      })
     }, {
       test: /\.(jpg|png|gif)$/,
       loader: 'file-loader'
@@ -57,7 +60,10 @@ module.exports = {
   plugins: [
     // new ForkCheckerPlugin(),
 
-    // new ExtractTextPlugin('styles.css'),
+    new ExtractTextPlugin({
+      filename: 'styles.css',
+      allChunks: true
+    }),
 
     new HtmlWebpackPlugin({
       template: 'src/index.html',
