@@ -6,7 +6,7 @@
     "clean": "rimraf ./build && rimraf ./reports && mkdir ./reports && mkdir ./reports/test-results",
     "build": "eslint *.js **/**/*.spec.jsx && webpack --config ./webpack.config.prod.js -p --progress --profile --bail",
     "develop": "webpack-dev-server --open --config ./webpack.config.develop.js --inline --progress",
-    "serve": "webpack --config ./webpack.config.prod.js -p --progress --profile --bail && http-server ./build -o",
+    "serve": "webpack --config ./webpack.config.prod.js -p --progress --profile --bail && http-server ./build -o -P http://your-domain.com/api"",
     "test": "npm run clean && export TEST_REPORT_PATH=./reports/test-results && jest --coverage --config ./jest.config.json"
   },
   "repository": {
@@ -49,7 +49,6 @@
     "axios-mock-adapter": "1.7.1",
     "babel-jest": "19.0.0",
     "babel-preset-env": "^1.6.0",
-    "babel-preset-es2015": "6.22.0",
     "babel-preset-react": "6.23.0",
     "codelyzer": "^3.0.1",
     "css-loader": "^0.28.1",
