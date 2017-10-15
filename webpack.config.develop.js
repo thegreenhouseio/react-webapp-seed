@@ -12,8 +12,8 @@ module.exports = webpackMerge(commonConfig, {
       poll: 1000
     },
     proxy: {
-      '/api.github.com/*': {
-        target: 'http://api.github.com/',
+      '/api/*': {
+        target: 'http://your-domain.com/',
         secure: false,
         changeOrigin: true
       }

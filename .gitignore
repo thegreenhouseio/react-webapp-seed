@@ -1,4 +1,5 @@
 *.*log
+.awcache/
 .idea/
 build/
 node_modules/

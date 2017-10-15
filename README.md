@@ -4,13 +4,6 @@ This is a simple starter project meant to get you up and running as fast as poss
 build with all the tools working together and as minimal friction and configuration as possible.  Simply clone the 
 repo and edit the files as needed to match your project.
 
-**Note:**
-As this is primarily a JavaScript based repo, a principal motivation in the direction and maintenance of this starter 
-repo will be in support of adoption of latest standards and specifications of ECMAScript.  For example, the decision to 
-adopt Webpack now was done with the understanding that ES6 `imports` would be supported in the 2.0 release.  This project 
-will always strive to work as close to the spec as possible to ensure the least amount of tools get in the way between 
-your user's browser and the source code written.
-
 **Redux**
 Redux dependencies are installed but not used in the seed for a reason.  Redux is something you should need, not sure
 by default.  For an example of a project used redux with this stack, checkout [github-dashboard][]
@@ -74,7 +67,7 @@ Recommended plugins to have are:
 2. This project favors Yarn, so make sure you have the latest by updating it after installing Node by running 
 
 ```
-$ npm install -g yarn@0.21.3
+$ npm install -g yarn@^1.0.0
 ```
 
 3. Now install the build and application dependencies by running
