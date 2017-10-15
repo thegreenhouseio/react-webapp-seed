@@ -6,7 +6,7 @@
     "clean": "rimraf ./build && rimraf ./reports && mkdir ./reports && mkdir ./reports/test-results",
     "build": "eslint *.js **/**/*.spec.jsx && webpack --config ./webpack.config.prod.js -p --progress --profile --bail",
     "develop": "webpack-dev-server --open --config ./webpack.config.develop.js --inline --progress",
-    "serve": "webpack --config ./webpack.config.prod.js -p --progress --profile --bail && http-server ./build -o -P http://your-domain.com/api"",
+    "serve": "webpack --config ./webpack.config.prod.js -p --progress --profile --bail && http-server ./build -o -P http://your-domain.com/api",
     "test": "npm run clean && export TEST_REPORT_PATH=./reports/test-results && jest --coverage --config ./jest.config.json"
   },
   "repository": {
