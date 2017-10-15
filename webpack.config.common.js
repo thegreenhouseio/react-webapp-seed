@@ -5,9 +5,11 @@ const SassLintPlugin = require('sasslint-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
+  context: path.join(__dirname, './src'),
+
   entry: {
-    index: './src/index.tsx',
-    vendor: './src/vendor.ts'
+    index: './index.tsx',
+    vendor: './vendor.ts'
   },
 
   output: {
@@ -30,7 +32,7 @@ module.exports = {
       // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
       test: /\.tsx?$/,
       loader: 'awesome-typescript-loader',
-      exclude: path.join(__dirname, 'node_modules')
+      exclude: /node_modules/
     }, {
       test: /\.tsx$/,
       enforce: 'pre',
@@ -70,12 +72,12 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: './index.html',
       chunksSortMode: 'dependency'
     }),
 
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['index', 'vendor']
+      name: 'common'
     })
 
   ]
